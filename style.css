@@ -1,0 +1,164 @@
+/* CSS files add styling rules to your content */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+  line-height: 1;
+}
+
+hr {
+  margin-left: 25rem;
+  margin-right: 25rem;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 2.5rem;
+}
+ul {
+  padding: 0;
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+img {
+  height: auto;
+  max-width: 100%;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.banner-image {
+  width: 100%;
+  vertical-align: top;
+}
+.toolbar-button {
+  color: black;
+  display: inline;
+  margin-right: 16px;
+  width: 100%;
+}
+
+.heading {
+  margin-top: 8rem;
+  margin-bottom: 1rem;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: calc(100% - 40px);
+  max-width: 600px;
+}
+
+.toolbar {
+  color: #999;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+.img-capt {
+  max-width: none;
+  color: #666;
+  margin: 10px 20px 0;
+  text-align: left;
+}
+
+.by-list {
+  display: inline-block;
+}
+
+.by-list-p {
+  display: inline-block;
+  font-size: 1.5rem;
+  line-height: 1.125rem;
+  margin-top: 3%;
+  font-weight: 700;
+  color: #333;
+}
+.story {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.story-inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+story-content:first-child {
+  margin-top: 0;
+}
+.story-content {
+  margin-bottom: 0.78125rem;
+  margin-top: 0;
+  font-size: 2rem !important;
+  line-height: 3rem !important;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: calc(100% - 40px);
+  max-width: 600px;
+}
+@media (min-width: 740px) {
+  .heading {
+    max-width: none;
+    margin-left: calc((100% - 600px) / 2);
+    margin-right: auto;
+    position: relative;
+    width: 660px;
+  }
+  .img-capt {
+    margin-left: 20px;
+    max-width: 900px;
+  }
+  .by-list-p {
+    font-size: 1.3rem;
+    line-height: 1.25rem;
+  }
+  .story-content {
+    font-size: 1.7rem;
+    line-height: 1.875rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .heading {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .img-capt {
+    margin-left: 20px;
+  }
+  .story-content {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
